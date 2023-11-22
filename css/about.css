@@ -1,0 +1,103 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+nav {
+    background-color: #333;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+}
+nav a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 15px;
+    text-transform: uppercase;
+    transition: background-color 0.3s;
+}
+nav a:hover {
+    background-color: #555;
+}
+.logo {
+    font-size: 1.5em;
+    font-weight: bold;
+}
+.navbar-items {
+    display: flex;
+}
+@media only screen and (max-width: 768px) {
+    nav {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .navbar-items {
+        margin-top: 10px;
+    }
+    nav a {
+        display: block;
+        padding: 10px 20px;
+    }
+}
+/*about css*/
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+}
+.about-container {
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    animation: fadeIn 1s;
+}
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+.about-container h2 {
+    text-align: center;
+    margin-bottom: 30px;
+    color: #333;
+}
+.about-me {
+    line-height: 1.6;
+    color: #333;
+}
+.contact-info {
+    margin-top: 30px;
+}
+.contact-info p {
+    color: #333;
+    margin-bottom: 10px;
+}
+.instagram-link {
+    display: inline-block;
+    background-color: #405de6;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s;
+}
+.instagram-link:hover {
+    background-color: #6e7fff;
+}
+@media only screen and (max-width: 768px) {
+    .about-container {
+        padding: 10px;
+    }
+}

@@ -1,0 +1,86 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+nav {
+    background-color: #333;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+}
+nav a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 15px;
+    text-transform: uppercase;
+    transition: background-color 0.3s;
+}
+nav a:hover {
+    background-color: #555;
+}
+.logo {
+    font-size: 1.5em;
+    font-weight: bold;
+}
+.navbar-items {
+    display: flex;
+}
+@media only screen and (max-width: 768px) {
+    nav {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .navbar-items {
+        margin-top: 10px;
+    }
+    nav a {
+        display: block;
+        padding: 10px 20px;
+    }
+}
+/*resume css*/
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.resume-container {
+    max-width: 600px;
+    width: 90%;
+    background-color: #fff;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    margin-left: 400px;
+    
+    
+}
+.resume-container h2, .resume-container h3 {
+    margin-bottom: 20px;
+    color: #333;
+}
+.resume-section {
+    margin-bottom: 30px;
+    text-align: left;
+}
+.resume-section h3 {
+    margin-bottom: 10px;
+    color: #333;
+}
+.resume-section p {
+    color: #555;
+    line-height: 1.6;
+}
+.profile-image {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
